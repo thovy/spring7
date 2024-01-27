@@ -47,5 +47,19 @@
             </tbody>
         </table>
     </div>
+
+    <!-- 자동 새로고침 기능을 추가 -->
+    <script type="text/javascript">
+        window.onload = setupRefresh;
+
+        // 새로고침 빈도
+        function setupRefresh() {
+            setTimeout("refreshPage();", 5000)
+        }
+
+        function refreshPage() {
+            window.location = location.href;
+        }
+    </script>
 </body>
 </html>
